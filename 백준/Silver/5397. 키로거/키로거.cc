@@ -44,8 +44,7 @@ int main() {
         cin >> S;
         cursor = 0;
         unused = 1;
-        fill(pre, pre + MX, -1);
-        fill(nxt, nxt + MX, -1);
+        nxt[0] = -1;
         
         for (char chr : S){
             if (chr == '<') {
